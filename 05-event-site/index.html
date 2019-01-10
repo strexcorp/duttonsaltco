@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DUTTON SALT CO</title>
+		<link rel="shortcut icon" type="image/jfif" href="images/shaker.jfif" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box1">
+				<a href="index.html">
+					<img class="header" src="images/header.png">
+				</a>
+			</div>
+			<nav class="topnav">
+				<a class="active" href="index.html">Home</a>
+				<a href="#news">News</a>
+				<a href="events.html">Events</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</nav>
+			<div class="box2">
+				<table>
+					<tr>
+						<td>Events</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="events.html#opening">-Doxeyton, ut, plant grand opening</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="box3">
+				<div class="w3-content w3-section" style="width:500px">
+					<div class="mySlides">
+						<img src="images/saltharvester.png" style="width:100%">
+						<div class="center">
+							our s2000 salt harvester
+						</div>
+					</div>
+					<div class="mySlides">
+						<img src="images/dumptruck.jfif" style="width:100%">
+						<div class="center">
+							our large xf3800 dump truck
+						</div>
+					</div>
+					<div class="mySlides">
+						<img src="images/saltytrain.jfif" style="width:100%">
+						<div class="center">
+							our kl3 locomotive
+						</div>
+					</div>
+				</div>
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  myIndex++;
+					  if (myIndex > x.length) {myIndex = 1}    
+					  x[myIndex-1].style.display = "block";  
+					  setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+				</script>
+				<iframe width="500" height="300" src="https://www.youtube.com/embed/tvI9A5Cgpqk?rel=0" frameborder="0" allowfullscreen></iframe>
+				<!-- TradingView Widget BEGIN -->
+				<div class="tradingview-widget-container" style="float: left">
+					<div id="tradingview_63b8e"></div>
+					<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NYSE-mmm/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
+					<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+					<script type="text/javascript">
+						new TradingView.widget(
+						{
+						"width": 500,
+						"height": 500,
+						"symbol": "NYSE:mmm",
+						"interval": "D",
+						"timezone": "Etc/UTC",
+						"theme": "Light",
+						"style": "1",
+						"locale": "en",
+						"toolbar_bg": "#f1f3f6",
+						"enable_publishing": false,
+						"allow_symbol_change": true,
+						"container_id": "tradingview_63b8e"
+						}
+						);
+					</script>
+				</div>
+				<!-- TradingView Widget END -->
+			</div>
+			<div class="box4">
+				<div class="center">
+					DUTTON SALT CO is a subsidiary of the NUTTY DUTTY corporation
+				</div>
+				<nav class="center">
+					<a href="index.html">Home</a>
+					<a href="#news">News</a>
+					<a href="events.html">Events</a>
+					<a href="#contact">Contact</a>
+					<a href="#about">About</a>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+	background-color: #4c4c4c;
+	color: lightGrey;
+}
+a:link {
+  color: lightGrey;
+}
+
+a:visited {
+  color: darkgrey;
+}
+
+.center{
+	text-align: center;
+}
+
+.header{
+	width: 100%;
+}
+
+
+.wrapper { 
+	display: grid; 
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+}
+
+
+.wrapper > div {
+	background-color: #4c4c4c;
+	/*border: 2px solid #ffa94d;*/
+}
+
+.box1 { 
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 1; 
+	grid-row-end: 3; 
+	padding-bottom: 5px;
+}
+
+
+.box2 {
+	display: none;
+}
+
+
+@media only screen and (min-width: 600px){
+	.box2 { 
+		display: block;
+		grid-column-start: 1; 
+		grid-row-start: 4; 
+		grid-row-end: 6; 
+		padding: 1em;
+	}
+}
+  
+table, th, td {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #d3d3d3;
+}
+
+.box3 { 
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 4; 
+	grid-row-end: 6; 
+	padding: 1em;
+}
+
+@media only screen and (min-width: 600px){
+	.box3 {
+	grid-column-start: 2;
+	grid-column-end: 4; 
+	grid-row-start: 4; 
+	grid-row-end: 6; 
+	padding: 1em;
+	}
+}
+
+.box4 {
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 6; 
+	grid-row-end: 7;
+	padding: 1em;
+}
+/*src: https://www.w3schools.com/howto/howto_js_topnav.asp */
+/* Add a black background color to the top navigation */
+.topnav {
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 3; 
+	grid-row-end: 4; 
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: darkgrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #CBD4DD;
+  color: #4c4c4c;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #CBD4DD;
+  color: #4c4c4c;
+}
+
+.mySlides{
+	background-color: #CBD4DD;
+	color: #4c4c4c;
+}
